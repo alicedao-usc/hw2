@@ -8,6 +8,7 @@
 #include "product.h"
 #include "db_parser.h"
 #include "product_parser.h"
+#include "amazonDatastore.h"
 #include "util.h"
 
 using namespace std;
@@ -29,7 +30,7 @@ int main(int argc, char* argv[])
      * Declare your derived DataStore object here replacing
      *  DataStore type to your derived type
      ****************/
-    DataStore ds;
+    AmazonDataStore ds;
 
 
 
@@ -100,10 +101,7 @@ int main(int argc, char* argv[])
                 done = true;
             }
 	    /* Add support for other commands here */
-
-
-
-
+            
             else {
                 cout << "Unknown command" << endl;
             }

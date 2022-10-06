@@ -18,9 +18,7 @@ std::set<std::string> parseStringToWords(string rawWords)
     std::set<std::string> words;
     std::string modifiedW;
 
-    rawWords = trim(rawWords);
-    // rawWords = tolower(rawWords); 
-    
+    rawWords = trim(rawWords);    
     for (unsigned int i = 0; i < rawWords.length(); i++) {
         if ((rawWords.at(i) == '\'') || (rawWords.at(i) == '.') || (rawWords.at(i) == '!') || (rawWords.at(i) == '?') || (rawWords.at(i) == ' ')) {
             if (modifiedW.length() > 1) {
